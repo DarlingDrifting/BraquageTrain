@@ -26,7 +26,9 @@ class Program
         int cartNumber = 1;
         int totalCarts = 4;
 
-        Console.WriteLine("Inspection des " + totalCarts + " Wagons du train");
+        Console.WriteLine("Combien de wagons avez-vous ?");
+        totalCarts = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine("\nInspection des " + totalCarts + " Wagons du train \n");
 
         do
         {
@@ -35,6 +37,7 @@ class Program
                 Console.WriteLine("Wagon " + cartNumber + " - Coffre " + i + " inspecté");
             }
             cartNumber += 1;
+            Console.WriteLine("");
 
         } while (cartNumber <= totalCarts);
     }
