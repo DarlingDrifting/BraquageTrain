@@ -40,5 +40,6 @@ class Program
             Console.WriteLine("");
 
         } while (cartNumber <= totalCarts);
+        Console.WriteLine("Total : " + (totalCarts * 3) + " coffres inspectés");
     }
 }
