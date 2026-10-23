@@ -25,13 +25,15 @@ class Program
          */
         int cartNumber = 1;
         int totalCarts = 4;
-        int chestNumber = 1;
 
         Console.WriteLine("Inspection des " + totalCarts + " Wagons du train");
 
         do
         {
-            Console.WriteLine("Wagon " + cartNumber + " -");
+            for (int i = 1; i <= 3; i++)
+            {
+                Console.WriteLine("Wagon " + cartNumber + " - Coffre " + i + " inspecté");
+            }
             cartNumber += 1;
 
         } while (cartNumber <= totalCarts);
