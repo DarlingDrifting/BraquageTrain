@@ -23,5 +23,17 @@ class Program
             BONUS 1 : permettre à l'utilisateur de choisir le nombre de wagons
             BONUS 2 : enregistrer l'ensemble du butin trouvé et l'afficher à la fin
          */
+        int cartNumber = 1;
+        int totalCarts = 4;
+        int chestNumber = 1;
+
+        Console.WriteLine("Inspection des " + totalCarts + " Wagons du train");
+
+        do
+        {
+            Console.WriteLine("Wagon " + cartNumber + " -");
+            cartNumber += 1;
+
+        } while (cartNumber <= totalCarts);
     }
 }
